@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="welcomeScreen"  >
+        <div class="container"> 
+            <label>Enter your User name</label>
+            <input type="text" placeholder="Enter your name" id="userName">
+            <small id="userNameError"></small>
+            <button onclick="startGame()">Start Game</button>
+        </div>
+    </div>
+
+    <div id="quizeArea" class="hide"  >
+        <div class="questionArea">
+             <div class="question">
+                <div id="questionStatement"> 
+
+                </div>
+                <div id="answers">
+                              
+                </div>
+                
+             </div>
+        </div>
+        <div id="levelArea">
+            <ul id="levelList"></ul>
+        </div>
+    </div>
+
+
+    <div id="looseScreen" class="hide"  >
+        <div class="container"> 
+            <h1 id="message">Better Luck Next Time !</h1>
+            <h3 id="prizeMoney">You Earned </h3>
+            <button onclick="location.reload()">Try Again</button>
+        </div>
+    </div>
+
+
+<script src="./index.js"></script>
+
+</body>
+</html>
